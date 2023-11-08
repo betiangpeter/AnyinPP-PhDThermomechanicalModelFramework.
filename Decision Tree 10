@@ -1,0 +1,23 @@
+# Now, we'll look at dataset with a 50:50 apples:orange ratio
+#some_mixing = [['Bitu_30/45'],
+ #              ['Bitu_20/30'],
+  #             ['Bitu_40/50'],
+  #             ['Bitu_50/70'],
+  #             ['Bitu_70/100'],
+  #             ['Bitu_100/150'],]
+ret3 = false_rows
+# this will return 0.5 - meaning, there's a 50% chance of misclassifying
+# a random example we draw from the dataset.
+gini(false_rows)
+
+false_rows
+retain3= false_rows
+
+# Let's partition the training data based on whether rows are Vico325.
+true_rows, false_rows = partition(retain3, Question(2, 'Bitu_40/60'))
+# This will contain all the 'Red' rows.
+true_rows
+
+ret4 = true_rows
+P = np.array(ret4)[:,1]
+statistics.median(P)
