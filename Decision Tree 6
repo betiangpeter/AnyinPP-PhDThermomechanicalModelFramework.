@@ -1,0 +1,13 @@
+def gini(rows):
+    """Calculate the Gini Impurity for a list of row
+
+    There are a few different ways to do this, I thought this one was the most See:
+    https://en.wikipedia.org/wiki/Decision_tree_learning#Gini_impurity
+    """
+
+    counts = class_counts(rows)
+    impurity = 1
+    for Ib1 in counts:
+        prob_of_Ib1 = counts[Ib1] / float(len(rows))
+        impurity -= prob_of_Ib1**2
+    return impurity
