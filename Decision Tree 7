@@ -1,0 +1,4 @@
+
+ret1 = true_rows
+P = np.array(ret1)[:,1]
+statistics.median(P)
