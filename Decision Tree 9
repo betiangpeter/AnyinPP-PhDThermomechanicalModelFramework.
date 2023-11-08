@@ -1,0 +1,8 @@
+# Let's partition the training data based on whether rows are Vico325.
+true_rows, false_rows = partition(retain2, Question(2, 'Bitu_35/50'))
+# This will contain all the 'Red' rows.
+true_rows
+
+ret3 = true_rows
+P = np.array(ret3)[:,1]
+statistics.median(P)
