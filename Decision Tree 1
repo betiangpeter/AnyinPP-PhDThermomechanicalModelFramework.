@@ -1,0 +1,14 @@
+# Column labels.
+# These are used only to print the tree.
+header = ["Vicosity", "Softening_Point", "label"]
+
+def unique_vals(rows, col):
+    """Find the unique values for a column in a dataset."""
+    return set([row[col] for row in rows])
+
+# Demo
+#unique_vals(training_data, 0)
+#unique_vals(training_data, 1)
+unique_vals(training_data, 2)
+#####
+
