@@ -1,0 +1,9 @@
+retain2 = false_rows
+
+# Now, we'll look at dataset with a 50:50 apples:orange ratio
+#some_mixing = [['Bitu_30/45'],
+
+retain2 = false_rows
+# this will return 0.5 - meaning, there's a 50% chance of misclassifying
+# a random example we draw from the dataset.
+gini(false_rows)
